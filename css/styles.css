@@ -1,0 +1,31 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #2c2c2c;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.nav-link {
+  color: #2c2c2c;
+}
+.header-btn {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: right;
+  color: #2c2c2c;
+  background: #bbf330;
+  cursor: pointer;
+}
+
+.nav-link-first {
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: underline;
+  color: #bbf330;
+}
