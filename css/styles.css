@@ -6,26 +6,306 @@ body {
 
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
+  color: inherit;
 }
+
+.container {
+  max-width: 1280px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+.header {
+  box-shadow: 0 4px 24px 0 rgba(105, 105, 105, 0.1);
+}
+
+.logo {
+  margin-right: auto;
+}
+.nav {
+  margin-right: 30px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 28px;
+}
+
 .nav-link {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
   color: #2c2c2c;
+  padding: 28px 0;
 }
-.header-btn {
+
+.nav-link:hover {
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #bbf330;
+}
+
+.nav-link:focus {
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #bbf330;
+}
+
+.main-btn {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 13px;
   line-height: 1.5;
-  text-align: right;
   color: #2c2c2c;
-  background: #bbf330;
+  background-color: #bbf330;
   cursor: pointer;
+  border-radius: 30px;
+  padding: 6px 18px;
+  border: none;
+  min-width: 98px;
+  height: 32px;
 }
 
-.nav-link-first {
+.main-btn:hover {
+  background: #ffe450;
+}
+
+.main-btn:focus {
+  background: #ffe450;
+}
+
+.hero {
+  padding-top: 14px;
+  padding-bottom: 69px;
+}
+
+.hero .container {
+  display: flex;
+  align-items: center;
+}
+.hero-wrapper {
+  max-width: 511px;
+  margin-right: 143px;
+}
+
+.hero-title {
+  font-size: 48px;
+  line-height: 1.2;
+  padding-bottom: 28px;
+}
+
+.hero-text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.about {
+  padding-top: 113px;
+  padding-bottom: 124px;
+  background-color: #ffe550;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+}
+
+.about-wrapper {
+  width: 573px;
+  margin-left: 90px;
+}
+
+.about-title {
+  font-size: 42px;
+  line-height: 1.2;
+  margin-bottom: 32px;
+}
+/* I've got 20px */
+
+.about-text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 28px;
+}
+/* margin-bottom: 40px; */
+
+.about-list {
+  display: flex;
+  gap: 67px;
+  margin-bottom: 32px;
+}
+
+.about-item {
+}
+
+.about-subtitle {
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.about-description {
+  line-height: 1.5;
+  color: #2c2c2c;
+}
+
+.about-btn {
+  border: 2px solid #7eb101;
+  padding: 10px 22px;
+  min-width: 106px;
+  height: 40px;
+  background-color: #fff;
+}
+/* pudding 10 22 */
+/* button is of different size */
+/* image apple bottom */
+
+.about-btn:hover {
+  background-color: #bbf330;
+  border: none;
+}
+
+.about-btn:focus {
+  background-color: #bbf330;
+  border: none;
+}
+
+.menu {
+  padding-top: 120px;
+  padding-bottom: 101px;
+}
+
+.menu-container {
+}
+.menu-title {
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.menu-text {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.menu-list {
+  display: flex;
+  justify-content: center;
+
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.menu-list-item {
+}
+
+.customers {
+  padding-top: 140px;
+  padding-bottom: 126px;
+  background: #ffe550;
+}
+
+.customers-title {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.customers-text {
+  font-size: 16px;
+  margin-bottom: 32px;
+}
+
+.customers-list {
+  display: flex;
+  gap: 139px;
+}
+
+.customers-item {
+  padding: 14px;
+  background-color: #fefefe;
+  width: 473px;
+  border-radius: 0 30px 30px 30px;
+}
+
+.customers-description {
   font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.customers-subtitle {
+  font-weight: 500;
   font-size: 14px;
-  text-decoration: underline;
-  color: #bbf330;
+  line-height: 1.5;
+  margin-bottom: 2px;
+}
+.customers-name {
+  line-height: 1.5;
+}
+
+.customers-wrapper {
+  display: flex;
+  border-right: 1px solid #7eb101;
+  min-width: 160px;
+  gap: 16px;
+  align-items: center;
+}
+
+.subscribe {
+  padding-top: 176px;
+  padding-bottom: 201px;
+}
+
+.subscribe-wrapper {
+  width: 656px;
+  height: 184px;
+}
+.subscribe-title {
+  font-size: 42px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.subscribe-text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.container-subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscribe-btn {
+  padding: 10px 20px;
+  min-width: 103px;
+  height: 42px;
+}
+
+.input-subscribe {
+  border: 0.85px solid #ffe550;
+  border-radius: 30px;
+  padding: 10px;
+  width: 395px;
+  height: 42px;
+  background-color: #fefefe;
 }
