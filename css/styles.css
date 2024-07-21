@@ -79,10 +79,12 @@ a {
   background-color: #bbf330;
   cursor: pointer;
   border-radius: 30px;
-  padding: 6px 18px;
+  padding: 6px 17px;
   border: none;
   min-width: 98px;
   height: 32px;
+  display: flex;
+  align-items: center;
 }
 
 .main-btn:hover {
@@ -171,12 +173,14 @@ a {
 
 .about-btn {
   border: 2px solid #7eb101;
-  padding: 10px 22px;
+  padding: 10px 20px;
   min-width: 106px;
   height: 40px;
   background-color: #fff;
+  display: flex;
+  align-items: center;
 }
-/* pudding 10 22 */
+
 /* button is of different size */
 /* image apple bottom */
 
@@ -292,7 +296,7 @@ a {
 .container-subscribe {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .subscribe-btn {
@@ -308,4 +312,97 @@ a {
   width: 395px;
   height: 42px;
   background-color: #fefefe;
+}
+
+.footer {
+  box-shadow: 0 -4px 24px 0 rgba(105, 105, 105, 0.1);
+  background: #fefefe;
+}
+
+.container-footer {
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer-link {
+}
+
+.footer-list {
+  display: flex;
+  gap: 28px;
+}
+
+.footer-item {
+  font-weight: 400;
+  font-size: 14px;
+  color: #2c2c2c;
+}
+
+.footer-subtitle {
+}
+
+.footer-input {
+  border: 0.85px solid #ffe550;
+  border-radius: 30px;
+  padding: 10px;
+  width: 279px;
+  height: 42px;
+  background-color: #fefefe;
+}
+
+input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #505050;
+}
+
+.footer-btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #2c2c2c;
+  cursor: pointer;
+  border-radius: 30px;
+  border: 2px solid #7eb101;
+  padding: 10px 20px;
+  min-width: 103px;
+  height: 42px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.footer-btn:hover {
+  background-color: #bbf330;
+  border: none;
+}
+
+.footer-btn:focus {
+  background-color: #bbf330;
+  border: none;
+}
+
+.footer-text-policy {
+}
+
+.footer-policy {
+}
+
+.footer-policy-list {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-policy-item {
+  font-weight: 400;
+  font-size: 12px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #7eb101;
+}
+
+.footer-text-reserved {
 }
